@@ -12,15 +12,16 @@
 
 <div class="flex flex-col h-[100vh] w-[100vw] items-center justify-center bg-indigo-900 text-yellow-100">
     <div class=" bg-blue-950 rounded-full mb-4 drop-shadow-2xl">
-        <img src={codefallacy} alt="codefallacy" width="250" height="250"/>
+        <img src={codefallacy} alt="codefallacy" width="250" height="250" fetchpriority='high'/>
     </div>
     <div class="text-2xl flex flex-col items-center justify-center mt-5 px-6 max-sm:text-xl">
-        <p>Hello, currently this site is under construction!</p>
-        <p>In the meantime, Check my Youtube Channel.</p>
+        <p>Hello!</p>
+        <p>Currently this site is under construction!</p>
+        <p>In the meantime, Check my Youtube Channel</p>
     </div>
 
-    <div class="w-full flex justify-center mt-15 max-sm:flex-col">
-        <div class="sm:mr-5 max-sm:mb-5">
+    <div class="w-full flex justify-center mt-15 max-sm:flex-col max-sm:items-center">
+        <div class="sm:mr-5 max-sm:mb-6">
             <a href="https://www.youtube.com/@codefallacy">
                 <img src={svg}
                     alt="codefallacy youtube channel"
@@ -29,12 +30,10 @@
             </a>
         </div>
 
-        <div class="ml-5">
+        <div class="sm:ml-5">
             <a href="https://buymeacoffee.com/codefallacy">
                 <img src={bmc} alt="buy-me-a-coffee" width="180"/>
             </a>
         </div>
-
     </div>
-
 </div>
