@@ -14,7 +14,7 @@
     <div class=" bg-blue-950 rounded-full mb-4 drop-shadow-2xl">
         <img src={codefallacy} alt="codefallacy" width="250" height="250"/>
     </div>
-    <div class="text-2xl flex flex-col items-center justify-center mt-5 px-6">
+    <div class="text-2xl flex flex-col items-center justify-center mt-5 px-6 max-sm:text-xl">
         <p>Hello, currently this site is under construction!</p>
         <p>In the meantime, Check my Youtube Channel.</p>
     </div>
