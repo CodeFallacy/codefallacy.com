@@ -4,6 +4,11 @@
     import svg from '$lib/assets/codefallacy/youtube.svg';
 </script>
 
+<svelte:head>
+    <title>CodeFallacy</title>
+    <meta name="description" content="The companion website to the tech tutorial Youtube Channel CodeFallacy, which includes written guides that go along with the videos"/>
+</svelte:head>
+
 <div class="flex flex-col h-[100vh] w-[100vw] items-center justify-center bg-indigo-900 text-yellow-100">
     <div class=" bg-blue-950 rounded-full mb-4 drop-shadow-2xl">
         <img src={codefallacy} alt="codefallacy" width="250" height="250"/>
