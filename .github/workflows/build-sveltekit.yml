@@ -49,3 +49,17 @@ jobs:
       #       "PORT=${{ secrets.SV_PORT }}"
       #       "CAPTCHAKEY=${{ secrets.CAPTCHAKEY }}"
       #       "PB_URL=${{ secrets.PB_URL }}"
+
+      - name: Trigger Dokploy Deployment
+        run: |
+            curl -X 'POST' \
+            '${{ secrets.DOKPLOY_WEBHOOK_URL }}' \
+            -H 'Content-Type: application/json' \
+            -H 'x-github-event: push' \
+            -d '{
+              "ref": "refs/heads/production",
+              "head_commit": {
+              "id": "${{ github.sha }}",
+              "message": "Deployment from Github Actions"
+            }
+            }'
