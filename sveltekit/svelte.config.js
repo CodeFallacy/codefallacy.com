@@ -21,7 +21,7 @@ const config = {
 				'script-src': [ "'self'", "https://codefallacy.com", "https://www.codefallacy.com" ],
 				'script-src-elem': [ "'self'", "https://codefallacy.com", "https://www.codefallacy.com" ],
 				'style-src': [ "'self'", "'unsafe-inline'", "https://codefallacy.com", "https://www.codefallacy.com" ],
-				'img-src': [ "'self'", "data:", "https://codefallacy.com", "https://www.codefallacy.com" ],
+				'img-src': [ "'self'", "data:", "https://codefallacy.com", "https://www.codefallacy.com", "*.codefallacy.com" ],
 				'font-src': [ "'self'", "https://codefallacy.com", "https://www.codefallacy.com" ],
 				"base-uri": [ "'self'", "https://codefallacy.com", "https://www.codefallacy.com" ],
 				"form-action": [ "'self'", "https://codefallacy.com", "https://www.codefallacy.com" ],
